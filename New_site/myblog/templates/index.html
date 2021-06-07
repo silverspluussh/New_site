@@ -1,0 +1,10 @@
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% for post in posts %}
+      <div>
+          <h1><a href="/post/{{ post.slug }}" > {{ post.title }}</a></h1>
+          <p>{{ post.summary }}</p>
+      </div>
+{% endfor %}
